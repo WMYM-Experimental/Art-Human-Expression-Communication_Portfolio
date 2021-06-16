@@ -1,2 +1,2 @@
 # PerlinNoise
-Will appear Perlin noise, using js 
+Perlin noise, using js 
