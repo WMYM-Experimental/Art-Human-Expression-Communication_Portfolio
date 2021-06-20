@@ -1,2 +1,2 @@
-# PerlinNoise
-Perlin noise, using js 
+# CronoJS
+Simple and minimalist cronometer, using js 
