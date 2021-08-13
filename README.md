@@ -1,6 +1,3 @@
-# TimeJS
+# ThirdWebsiteTry_Forms
 
-~No libraries~
-
-Simple and minimalist time projects (clock, crono, temp... ect)
-using vanilla Js, html and css
+My third try to do a "Website" this time with more animation and finally fully responsive
