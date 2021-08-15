@@ -1,3 +1,5 @@
+/*------------------General style------------------*/
+
 * {
   padding: 0;
   margin: 0;
@@ -7,12 +9,19 @@
 body {
   background: #f8f9fa;
 }
+a {
+  text-decoration: none;
+}
+
+/*------------------Sign in-up form------------------*/
+/*------------------Sign in form------------------*/
+
 .container {
   position: relative;
   width: 100%;
   min-width: 100vh;
   color: #999;
-  background-color: red;
+  /*overflow: hidden;*/
 }
 .container__forms {
   position: absolute;
@@ -20,18 +29,34 @@ body {
   height: 100%;
   top: 0;
   left: 0;
+  background: red;
 }
 form {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
+form.form__sign-in-form {
+  z-index: 2;
+}
+form.form__sign-up-form {
+  z-index: 1;
+  opacity: 0;
+}
+
+/*------------------Sign in form title------------------*/
+
 .form__title {
   font-size: 2.5em;
   color: #333333;
   margin-bottom: 15px;
 }
+
+/*------------------Sign in user info inputs------------------*/
+
 .form__input-field {
   width: 100%;
   max-width: 380px;
@@ -62,7 +87,7 @@ form {
   color: #aaaaaa;
 }
 
-/*------------------button------------------*/
+/*------------------Sign in - button------------------*/
 .form__login-btn {
   border: 1px transparent;
   cursor: pointer;
@@ -77,3 +102,38 @@ form {
   margin: 15px 0;
   transition: 0.5s;
 }
+.form__login-btn:hover {
+  background: #8cece2;
+}
+
+/*------------------Sign in form social networks text------------------*/
+
+.form__social-text {
+  padding: 0.75em 0;
+  font-size: 1rem;
+}
+
+/*------------------Sign in form social networks icons------------------*/
+
+.form__social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.form__social-media_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+  color: #333333;
+  background: #c5f5f0;
+}
+.form__social-media_icons:hover {
+  background: #8cece2;
+  box-shadow: 0 0 24px rgba(51, 51, 51, 0.3);
+}
+
+/*------------------Sign in form social networks icons------------------*/
