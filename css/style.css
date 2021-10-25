@@ -383,3 +383,11 @@ section {
 }
 
 /*  -----------------------------------responsive----------------------------------- */
+@media (max-width: 1040px) {
+  header {
+    padding: 12px 20px;
+  }
+  header.static {
+    padding: 12px 20px;
+  }
+}

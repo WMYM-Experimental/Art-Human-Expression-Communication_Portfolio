@@ -5,3 +5,13 @@
   font-family: "Roboto Condensed", sans-serif;
   text-decoration: none;
 }
+body {
+  background: #111;
+  text-align: center;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  align-items: center;
+  font-size: 8em;
+}
