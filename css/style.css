@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Roboto Condensed", sans-serif;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 body {
   min-height: 110vh;
@@ -202,4 +203,56 @@ section {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+/*  -----------------------------------progress ----------------------------------- */
+#progress {
+  background: #111;
+  color: #fff;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.title p {
+  font-size: 1em;
+  width: 80%;
+}
+#progress .content .card {
+  background: #222;
+  color: #fff;
+  width: 340px;
+  margin: 10px;
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 5px 25px rgba(31, 122, 140, 0.05);
+  border-radius: 5px;
+}
+#progress .content .card .progress-icon {
+  color: #1f7a8c;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.8s ease;
+}
+#progress .content .card .progress-icon span {
+  color: #1f7a8c;
+  font-size: 8em;
+  align-items: center;
+  text-align: center;
+}
+#progress .content .card:hover .progress-icon {
+  transform: translateY(-10px);
+}
+#progress .content .card .info {
+  text-align: center;
+}
+#progress .content .card .info h3 {
+  color: #1f7a8c;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
 }
