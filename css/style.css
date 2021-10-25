@@ -143,6 +143,9 @@ section {
 .bio {
   background: #fafdf6;
 }
+.bio p {
+  color: #6b705c;
+}
 .bio__title {
   width: 100%;
   display: flex;
@@ -259,6 +262,9 @@ section {
   margin: 10px;
 }
 /*  ----------------------------------- contact ways----------------------------------- */
+.contact {
+  background: #fafdf6;
+}
 .contact .content {
   display: flex;
   justify-content: center;
@@ -281,7 +287,8 @@ section {
   align-items: center;
   flex-direction: column;
   border-radius: 8px;
-  box-shadow: 0 5px 25px rgba(31, 122, 140, 0.3);
+  border: 2px solid #1f7a8c;
+  transition: transform 0.8s ease;
 }
 .contact .content .row .card .contact-icon span {
   text-align: center;
@@ -302,3 +309,77 @@ section {
   color: #1f7a8c;
 }
 /*  -----------------------------------contact form----------------------------------- */
+.contact-form {
+  background: #f4f6f8;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  margin-top: 50px;
+  padding: 50px;
+  border-radius: 8px;
+}
+.contact-form h3 {
+  color: #222;
+  font-size: 1.8em;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.contact-form .contact_input-box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contact-form .contact_input-box input,
+.contact-form .contact_input-box textarea {
+  font-weight: 700;
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-size: 1em;
+  border: 1.4px solid #1f7a8c;
+  border-radius: 30px;
+}
+.contact-form .contact_input-box textarea {
+  border-radius: 8px;
+  padding: 20px;
+}
+.contact-form .contact_input-box textarea {
+  border-radius: 8px;
+  padding: 20px;
+}
+.contact-form .contact_input-box .send-btn {
+  background: #1f7a8c;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 500;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  transition: transform 0.8s ease;
+}
+.contact-form .contact_input-box .send-btn:hover {
+  transform: translateY(-10px);
+}
+/*  -----------------------------------footer----------------------------------- */
+.footer {
+  color: #6b705c;
+  background: #111;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+.footer-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer a {
+  color: #6b705c;
+}
+
+/*  -----------------------------------responsive----------------------------------- */
