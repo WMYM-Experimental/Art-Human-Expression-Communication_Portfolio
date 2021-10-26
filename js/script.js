@@ -33,9 +33,3 @@ hamMenuItems.forEach((item) => {
     verifyActiveMenu();
   });
 });
-
-// send btn
-
-sendBtn.addEventListener("click", () => {
-  sendBtn.classList.toggle("active");
-});
