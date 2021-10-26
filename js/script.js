@@ -5,12 +5,30 @@ window.addEventListener("scroll", function () {
   navbar.classList.toggle("static", window.scrollY > 0);
 });
 
-//ham menu effect-responsive design
+//ham menu open and close effect-responsive design
 const hamIcon = document.getElementById("ham-icon");
 const hamMenu = document.getElementById("ham-menu");
 const navbarLinks = document.querySelector(".navbar__links");
+const hamMenuItems = document.querySelectorAll(".navbar__links a");
+
+function verifyActiveMenu() {
+  if (hamMenu.classList.contains("active")) {
+    hamIcon.innerHTML = "close";
+  } else {
+    hamIcon.innerHTML = "menu";
+  }
+}
+
 hamMenu.addEventListener("click", () => {
-  hamIcon.innerHTML = "close";
   hamMenu.classList.toggle("active");
   navbarLinks.classList.toggle("active");
+  verifyActiveMenu();
+});
+
+hamMenuItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    hamMenu.classList.remove("active");
+    navbarLinks.classList.remove("active");
+    verifyActiveMenu();
+  });
 });

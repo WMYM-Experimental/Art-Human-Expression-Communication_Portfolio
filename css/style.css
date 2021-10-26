@@ -201,6 +201,9 @@ section {
   position: relative;
   width: 50%;
 }
+.bio .bio__content .right-col .content-title {
+  margin: 20px 0;
+}
 .bio .bio__content .left-col .bio__card {
   position: relative;
   width: 100%;
@@ -400,7 +403,7 @@ section {
   }
   .navbar__links.active {
     display: inline;
-    z-index: 100000;
+    z-index: 2;
     position: fixed;
     background: #222;
     top: 0;
@@ -414,6 +417,15 @@ section {
     transition: 0.8s ease;
     box-shadow: 0 5px 25px rgba(31, 122, 140, 0.2);
   }
+  .navbar__links.active a {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 20px;
+    background: #1f7a8c;
+    padding: 5px 20px;
+    border-radius: 8px;
+  }
   .ham-menu {
     display: flex;
     justify-content: flex-end;
@@ -421,11 +433,47 @@ section {
   .ham-menu span {
     position: absolute;
     transition: 0.8 ease;
+    display: block;
+    z-index: 999;
   }
   #ham-icon {
     transition: 0.8 ease;
   }
   .ham-menu .active {
-    z-index: 1000;
+    position: absolute;
+    display: block;
+    z-index: 999;
+  }
+  section {
+    padding: 80px 20px;
+  }
+  .home .home__content h2 {
+    font-size: 1em;
+  }
+  .bio .bio__content {
+    flex-direction: column;
+  }
+  .bio .bio__content .col {
+    position: relative;
+    width: 100%;
+  }
+  .bio .bio__content .right-col {
+    margin-top: 20px;
+  }
+  .bio .bio__content .right-col .btn {
+    margin-top: 40px;
+  }
+  .contact-form {
+    padding: 35px 40px;
+  }
+}
+@media (max-width: 450px) {
+  .bio .bio__content .right-col .btn {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 }
