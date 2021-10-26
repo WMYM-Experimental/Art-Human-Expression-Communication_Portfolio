@@ -55,7 +55,12 @@ header.static {
 header.static .navbar__links a:hover {
   color: #222;
 }
-
+.ham-menu {
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  display: none;
+}
 /* -----------------------------------home----------------------------------- */
 section {
   padding: 100px 200px;
@@ -368,7 +373,7 @@ section {
 }
 /*  -----------------------------------footer----------------------------------- */
 .footer {
-  color: #6b705c;
+  color: #1f7a8c;
   background: #111;
   padding: 20px;
   text-align: center;
@@ -379,7 +384,7 @@ section {
   font-weight: bold;
 }
 .footer a {
-  color: #6b705c;
+  color: #fff;
 }
 
 /*  -----------------------------------responsive----------------------------------- */
@@ -388,6 +393,39 @@ section {
     padding: 12px 20px;
   }
   header.static {
-    padding: 12px 20px;
+    padding: 10px 20px;
+  }
+  .navbar__links {
+    display: none;
+  }
+  .navbar__links.active {
+    display: inline;
+    z-index: 100000;
+    position: fixed;
+    background: #222;
+    top: 0;
+    right: 0;
+    width: 380px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.8s ease;
+    box-shadow: 0 5px 25px rgba(31, 122, 140, 0.2);
+  }
+  .ham-menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .ham-menu span {
+    position: absolute;
+    transition: 0.8 ease;
+  }
+  #ham-icon {
+    transition: 0.8 ease;
+  }
+  .ham-menu .active {
+    z-index: 1000;
   }
 }
