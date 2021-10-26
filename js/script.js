@@ -10,6 +10,7 @@ const hamIcon = document.getElementById("ham-icon");
 const hamMenu = document.getElementById("ham-menu");
 const navbarLinks = document.querySelector(".navbar__links");
 const hamMenuItems = document.querySelectorAll(".navbar__links a");
+const sendBtn = document.querySelector(".send-btn");
 
 function verifyActiveMenu() {
   if (hamMenu.classList.contains("active")) {
@@ -31,4 +32,10 @@ hamMenuItems.forEach((item) => {
     navbarLinks.classList.remove("active");
     verifyActiveMenu();
   });
+});
+
+// send btn
+
+sendBtn.addEventListener("click", () => {
+  sendBtn.classList.toggle("active");
 });

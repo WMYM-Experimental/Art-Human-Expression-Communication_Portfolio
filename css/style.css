@@ -424,7 +424,7 @@ section {
     margin: 20px;
     background: #1f7a8c;
     padding: 5px 20px;
-    border-radius: 8px;
+    border-radius: 3px;
   }
   .ham-menu {
     display: flex;
