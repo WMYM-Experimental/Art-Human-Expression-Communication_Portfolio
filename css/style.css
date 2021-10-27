@@ -8,9 +8,13 @@
 }
 body {
   min-height: 110vh;
+  background: #222;
 }
 a {
   color: #000;
+}
+img {
+  border-radius: 8px;
 }
 /* -----------------------------------navbar----------------------------------- */
 header {
@@ -406,7 +410,7 @@ img {
   flex-wrap: wrap;
 }
 .column {
-  flex: 25%;
+  flex: 20%;
   padding: 5px;
 }
 .column a img {
@@ -500,12 +504,7 @@ img {
     align-items: center;
   }
 }
-@media (max-width: 700px) {
-  .column {
-    flex: 50%;
-  }
-}
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   .column {
     flex: 100%;
   }
