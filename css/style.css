@@ -7,7 +7,7 @@
   scroll-behavior: smooth;
 }
 body {
-  min-height: 110vh;
+  min-height: 100vh;
   background: #222;
 }
 a {
@@ -75,7 +75,7 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: #111;
+  background: #222;
 }
 .home__content {
   max-width: 800px;
@@ -223,7 +223,8 @@ section {
 }
 /*  -----------------------------------progress ----------------------------------- */
 #progress {
-  background: #111;
+  margin-bottom: 50px;
+  background: #222;
   color: #fff;
 }
 .content {
@@ -246,7 +247,8 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 5px 25px rgba(31, 122, 140, 0.05);
+  box-shadow: 0 5px 25px rgba(31, 122, 140, 0.25);
+  transition: all 0.8s ease;
   border-radius: 5px;
 }
 #progress .content .card .progress-icon {
@@ -260,6 +262,10 @@ section {
   font-size: 8em;
   align-items: center;
   text-align: center;
+}
+#progress .content .card:hover {
+  box-shadow: 0 5px 25px rgba(31, 122, 140, 0.5);
+  transition: all 0.8s ease;
 }
 #progress .content .card:hover .progress-icon {
   transform: translateY(-10px);
@@ -385,6 +391,7 @@ section {
   padding: 20px;
   text-align: center;
   align-items: center;
+  border-top: 1px #fff solid;
 }
 .footer-title {
   font-size: 20px;
@@ -449,10 +456,11 @@ img {
     font-size: 1.2em;
     font-weight: 500;
     margin: 20px;
-    background: #1f7a8c;
+    border: 1px solid #1f7a8c;
     padding: 5px 20px;
     border-radius: 3px;
   }
+
   .ham-menu {
     display: flex;
     justify-content: flex-end;
