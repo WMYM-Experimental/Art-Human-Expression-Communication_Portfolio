@@ -10,6 +10,6 @@ PD. I really enjoy this project C:
 
 ### Technologies:
 
--HTML
--CSS
--JavaScript
+- HTML
+- CSS
+- JavaScript
