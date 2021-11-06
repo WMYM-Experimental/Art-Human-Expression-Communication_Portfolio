@@ -265,11 +265,30 @@ section {
   text-align: center;
 }
 #progress .content .card:hover {
-  box-shadow: 0 5px 25px rgba(31, 122, 140, 0.5);
+  box-shadow: 0 0 60px rgba(31, 122, 140, 0.5);
   transition: all 0.8s ease;
 }
+
+@keyframes move-icon {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  75% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 #progress .content .card:hover .progress-icon {
-  transform: translateY(-10px);
+  animation: move-icon 12s infinite;
 }
 #progress .content .card .info {
   text-align: center;
