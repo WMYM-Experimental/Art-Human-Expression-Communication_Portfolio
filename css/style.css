@@ -349,6 +349,7 @@ section {
 /*  -----------------------------------contact form----------------------------------- */
 .contact-form {
   background: #f4f6f8;
+  background: #fefeff;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
   max-width: 600px;
   margin-top: 50px;
