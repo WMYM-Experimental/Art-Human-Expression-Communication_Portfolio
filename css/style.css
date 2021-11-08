@@ -388,6 +388,12 @@ section {
   border-radius: 8px;
   padding: 20px;
 }
+.contact-form .contact_input-box textarea:focus,
+.contact-form .contact_input-box input:focus {
+  outline: none;
+  border: 2px solid #1f7a8c;
+  box-shadow: 0 0 25px rgba(36, 81, 90, 0.25);
+}
 .contact-form .contact_input-box .send-btn {
   background: #1f7a8c;
   border-radius: 8px;
