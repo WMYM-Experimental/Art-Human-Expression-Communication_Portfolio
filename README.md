@@ -15,3 +15,4 @@ PD. I really enjoy this project C:. But i'll improve it by the time.
 - JavaScript - Vanilla
 - Google Icons
 - Google Fonts
+- Responsive Design
