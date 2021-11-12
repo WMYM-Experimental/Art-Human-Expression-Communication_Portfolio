@@ -34,7 +34,8 @@ hamMenuItems.forEach((item) => {
     verifyActiveMenu();
   });
 });
-//eyes
+
+/* eyes followers (working on it)
 eyes.forEach((eye) => {
   window.addEventListener("mousemove", (event) => {
     let x = eye.left + eye.x / 2;
@@ -47,3 +48,4 @@ eyes.forEach((eye) => {
     eye.style.transform = "rotate(" + rot + "deg)";
   });
 });
+*/
