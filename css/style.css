@@ -461,8 +461,11 @@ img {
   flex: 15%;
   padding: 5px;
 }
+.column a{
+  margin: 5px;
+}
 .column a img {
-  margin-top: 5px;
+  margin-top: 0px;
 }
 /* image effect */
 .image__img {
@@ -485,9 +488,11 @@ img {
   opacity: 0;
   backdrop-filter: blur(5px);
   transition: opacity 0.8s ease;
+  border-radius: 8px;
 }
 .image__overlay:hover {
   opacity: 1;
+  border-radius: 8px;
 }
 .image__overlay > * {
   transform: translateY(5px);
