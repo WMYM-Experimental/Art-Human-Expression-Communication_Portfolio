@@ -154,6 +154,7 @@ section {
 }
 .bio p {
   color: #6b705c;
+  font-size: 1.2em;
 }
 .bio__title {
   width: 100%;
@@ -221,6 +222,14 @@ section {
   height: 100%;
   object-fit: contain;
 }
+.bio .bio__content .left-col .bio__card iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+}
 /*  -----------------------------------progress ----------------------------------- */
 #progress {
   margin-bottom: 50px;
@@ -234,8 +243,8 @@ section {
   flex-direction: row;
   margin-top: 100px;
 }
-.title p {
-  font-size: 1em;
+#progress p {
+  font-size: 1.2em;
   width: 80%;
 }
 #progress .content .card {
@@ -264,11 +273,30 @@ section {
   text-align: center;
 }
 #progress .content .card:hover {
-  box-shadow: 0 5px 25px rgba(31, 122, 140, 0.5);
+  box-shadow: 0 0 60px rgba(31, 122, 140, 0.5);
   transition: all 0.8s ease;
 }
+
+@keyframes move-icon {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  75% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 #progress .content .card:hover .progress-icon {
-  transform: translateY(-10px);
+  animation: move-icon 12s infinite;
 }
 #progress .content .card .info {
   text-align: center;
@@ -329,6 +357,7 @@ section {
 /*  -----------------------------------contact form----------------------------------- */
 .contact-form {
   background: #f4f6f8;
+  background: #fefeff;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
   max-width: 600px;
   margin-top: 50px;
@@ -367,6 +396,12 @@ section {
   border-radius: 8px;
   padding: 20px;
 }
+.contact-form .contact_input-box textarea:focus,
+.contact-form .contact_input-box input:focus {
+  outline: none;
+  border: 2px solid #1f7a8c;
+  box-shadow: 0 0 25px rgba(36, 81, 90, 0.25);
+}
 .contact-form .contact_input-box .send-btn {
   background: #1f7a8c;
   border-radius: 8px;
@@ -387,7 +422,7 @@ section {
 /*  -----------------------------------footer----------------------------------- */
 .footer {
   color: #1f7a8c;
-  background: #111;
+  background: #222;
   padding: 20px;
   text-align: center;
   align-items: center;
@@ -400,28 +435,86 @@ section {
 .footer a {
   color: #fff;
 }
+#project{
+  min-width: 100%;
+}
 /*  -----------------------------------Galery----------------------------------- */
 img {
   width: 100%;
 }
-.pics {
+.image {
+  display: inline-flex;
+  position: relative;
   width: 100%;
 }
-.pics img {
+.image img {
   width: 100%;
 }
 .galery-row {
+  background: #111;
   margin-top: 58px;
   display: flex;
   padding: 5px;
   flex-wrap: wrap;
+  min-height: 100vh;
 }
 .column {
-  flex: 20%;
+  flex: 15%;
   padding: 5px;
 }
+.column a{
+  margin: 5px;
+}
 .column a img {
-  margin-top: 5px;
+  margin-top: 0px;
+}
+/* image effect */
+.image__img {
+  display: block;
+  width: 100%;
+}
+.image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #1f7a8c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  opacity: 0;
+  backdrop-filter: blur(5px);
+  transition: opacity 0.8s ease;
+  border-radius: 8px;
+}
+.image__overlay:hover {
+  opacity: 1;
+  border-radius: 8px;
+}
+.image__overlay > * {
+  transform: translateY(5px);
+  transition: transform 0.8s ease;
+}
+.image__overlay:hover > * {
+  transform: translateY(0);
+  transition: transform 0.8s ease;
+}
+.image__title {
+  font-size: 2em;
+  font-weight: 700;
+  -webkit-text-stroke: 0.5px #fff;
+  color: transparent;
+}
+.image__text {
+  font-size: 2em;
+  font-weight: 500;
+  margin-top: 0.2em;
+  -webkit-text-stroke: 0.5px #fff;
+  color: transparent;
 }
 
 /*  -----------------------------------responsive----------------------------------- */
@@ -515,5 +608,23 @@ img {
 @media (max-width: 1200px) {
   .column {
     flex: 100%;
+  }
+}
+@media (max-width: 1020px) {
+  .bio .bio__content .right-col {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 600px){
+  .daliT{
+    font-size: 1em;
+  }
+  .dali{
+    max-height: 30px;
+  }
+}
+@media (width: 1800px){
+  .contact form{
+    margin: 50px;
   }
 }
