@@ -627,7 +627,10 @@ img {
   }
 }
 @media (max-width: 1840px){
+  .row{
+    height: 80%;
+  }
   .contact-form{
-    margin: 70px;
+    margin: 70px 70px;
   }
 }
