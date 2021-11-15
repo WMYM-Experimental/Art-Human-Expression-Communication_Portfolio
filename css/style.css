@@ -319,9 +319,12 @@ section {
   margin-top: 20px;
 }
 .contact .content .row {
+  /*responsive for contact*/
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  flex> 50%;
+  min-height: 100vh;
   flex-direction: row;
 }
 .contact .content .row .card {
