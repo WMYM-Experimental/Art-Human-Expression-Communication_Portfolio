@@ -227,13 +227,8 @@ section {
   width: 100%;
   height: 100%;
   object-fit: contain;
-}
-#project {
-  width: 100%;
-  height: 100%;
-}
-.weeks{
-  max-height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 /*  -----------------------------------progress ----------------------------------- */
 #progress {
@@ -439,6 +434,9 @@ section {
 }
 .footer a {
   color: #fff;
+}
+#project{
+  min-width: 100%;
 }
 /*  -----------------------------------Galery----------------------------------- */
 img {
