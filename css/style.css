@@ -233,7 +233,7 @@ section {
   height: 100%;
 }
 .weeks{
-  max-height: 95vh;
+  max-height: 100vh;
 }
 /*  -----------------------------------progress ----------------------------------- */
 #progress {
