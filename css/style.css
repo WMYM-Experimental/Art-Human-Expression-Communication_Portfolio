@@ -626,7 +626,7 @@ img {
     max-height: 30px;
   }
 }
-@media (max-width: 1840px){
+@media (width: 1840px){
   .row{
     height: 80%;
   }
