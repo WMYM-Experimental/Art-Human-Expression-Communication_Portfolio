@@ -626,3 +626,8 @@ img {
     max-height: 30px;
   }
 }
+@media (max-width: 18400px){
+  .contact-form{
+    margin: 0 50px;
+  }
+}
