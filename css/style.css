@@ -318,12 +318,12 @@ section {
   flex-direction: column;
   margin-top: 20px;
 }
+ /*responsive for contact*/
 .contact .content .row {
-  /*responsive for contact*/
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  flex> 50%;
+  flex: 50%;
   min-height: 100vh;
   flex-direction: row;
 }
