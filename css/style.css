@@ -232,6 +232,9 @@ section {
   width: 100%;
   height: 100%;
 }
+.weeks{
+  max-height: 95vh;
+}
 /*  -----------------------------------progress ----------------------------------- */
 #progress {
   margin-bottom: 50px;
@@ -612,5 +615,13 @@ img {
 @media (max-width: 1020px) {
   .bio .bio__content .right-col {
     margin-top: 60px;
+  }
+}
+@media (max-width: 600px){
+  .daliT{
+    font-size: 1em;
+  }
+  .dali{
+    max-height: 30px;
   }
 }
