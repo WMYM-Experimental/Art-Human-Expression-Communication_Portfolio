@@ -1,6 +1,6 @@
 # Art-Human-Expression-Communication_Portfolio
 
-## NOT FINISHED YET
+## NOT FINISHED YET - But u can see the current deployment already
 
 In college i have an art class "Art-Human-Expression-Communication" my teacher required me a portfolio where i will have to upload all my projects related to this art subject.
 
@@ -13,3 +13,9 @@ PD. I really enjoy this project C:
 - HTML
 - CSS
 - JavaScript
+
+### Important Aspects
+
+- This is a fully responsive site
+- im going to be modifying the website until 02/2002
+- Am gona update some features in the future... Add animations, etc...
