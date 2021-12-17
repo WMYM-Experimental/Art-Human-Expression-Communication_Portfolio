@@ -623,8 +623,14 @@ img {
     max-height: 30px;
   }
 }
+<<<<<<< HEAD
 @media (width: 1800px){
   .contact form{
     margin: 50px;
+=======
+@media (max-width: 1840px){
+  .contact-form{
+    margin: 70px;
+>>>>>>> origin/gh-pages
   }
 }
