@@ -6,23 +6,18 @@ In college i have an art class "Art-Human-Expression-Communication" my teacher r
 
 By making this website by myself (without using "Canva" or any other type of web page creation software by blocks like wix or wordpress, didn't like). From this I will be able to improve technical and artistic skills at the same time.
 
-PD. I really enjoy this project C:. But i'll improve it by the time. 
+PD. I really enjoy this project C:. But i'll improve it by the time.
 
 ### Technologies:
 
 - HTML
 - CSS
-<<<<<<< HEAD
-- JavaScript
+- JavaScript - Vanilla
+- Google Icons/Fonts
+- Responsive Design
 
 ### Important Aspects
 
 - This is a fully responsive site
 - im going to be modifying the website until 02/2002
 - Am gona update some features in the future... Add animations, etc...
-=======
-- JavaScript - Vanilla
-- Google Icons
-- Google Fonts
-- Responsive Design
->>>>>>> origin/gh-pages
