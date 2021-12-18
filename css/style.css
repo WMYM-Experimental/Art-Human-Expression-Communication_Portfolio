@@ -435,7 +435,7 @@ section {
 .footer a {
   color: #fff;
 }
-#project{
+#project {
   min-width: 100%;
 }
 /*  -----------------------------------Galery----------------------------------- */
@@ -462,7 +462,7 @@ img {
   flex: 15%;
   padding: 5px;
 }
-.column a{
+.column a {
   margin: 5px;
 }
 .column a img {
@@ -615,22 +615,16 @@ img {
     margin-top: 60px;
   }
 }
-@media (max-width: 600px){
-  .daliT{
+@media (max-width: 600px) {
+  .daliT {
     font-size: 1em;
   }
-  .dali{
+  .dali {
     max-height: 30px;
   }
 }
-<<<<<<< HEAD
-@media (width: 1800px){
-  .contact form{
-    margin: 50px;
-=======
-@media (max-width: 1840px){
-  .contact-form{
+@media (max-width: 1840px) {
+  .contact-form {
     margin: 70px;
->>>>>>> origin/gh-pages
   }
 }
