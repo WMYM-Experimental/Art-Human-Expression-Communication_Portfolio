@@ -438,7 +438,7 @@ section {
 #project {
   min-width: 100%;
 }
-/*  -----------------------------------Galery----------------------------------- */
+/*  -----------------------------------Gallery----------------------------------- */
 img {
   width: 100%;
 }
@@ -450,11 +450,11 @@ img {
 .image img {
   width: 100%;
 }
-.galery-row {
+.gallery-row {
   background: #111;
   margin-top: 58px;
   display: flex;
-  padding: 5px;
+  padding: 15px;
   flex-wrap: wrap;
   min-height: 100vh;
 }
