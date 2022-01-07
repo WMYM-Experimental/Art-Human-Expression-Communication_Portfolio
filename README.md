@@ -1,5 +1,7 @@
 # Art-Human-Expression-Communication_Portfolio
 
+Done by [Washington Yandun](https://github.com/WashingtonYandun/Art-Human-Expression-Communication_Portfolio)
+
 ## NOT FINISHED YET - But u can see the current deployment already
 
 In college i have an art class "Art-Human-Expression-Communication" my teacher required me a portfolio where i will have to upload all my projects related to this art subject.
@@ -19,5 +21,5 @@ PD. I really enjoy this project C:. But i'll improve it by the time.
 ### Important Aspects
 
 - This is a fully responsive site
-- im going to be modifying the website until 02/2002
-- Am gona update some features in the future... Add animations, etc...
+- im going to be modifying the website until 02/2022
+- Am gona update some features in the future... Add animations, more content, etc...
